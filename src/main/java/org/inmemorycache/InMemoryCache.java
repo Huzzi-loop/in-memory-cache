@@ -1,11 +1,12 @@
 package org.inmemorycache;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 import org.inmemorycache.interfaces.Cache;
 import org.inmemorycache.interfaces.EvictionStrategy;
 import org.inmemorycache.interfaces.Producer;
 import org.inmemorycache.models.EventType;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class InMemoryCache<KEY, VALUE> extends Producer<KEY> implements Cache<KEY, VALUE> {
 
